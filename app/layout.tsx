@@ -1,3 +1,4 @@
+import Login from './components/login/Login'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Login/>
+        {children}
+      </body>
     </html>
   )
 }
